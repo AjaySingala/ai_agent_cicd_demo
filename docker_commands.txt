@@ -1,0 +1,9 @@
+# Build Container
+docker build -t langgraph-agent .
+
+# Run locally
+docker run -p 8000:8000 langgraph-agent
+
+# Test
+http://localhost:8000/docs
+
