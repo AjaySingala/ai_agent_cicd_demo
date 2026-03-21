@@ -8,9 +8,9 @@ from agent import agent
 
 app = FastAPI()
 
-# For Telemetry.
-from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
-FastAPIInstrumentor.instrument_app(app)
+# # For Telemetry.
+# from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
+# FastAPIInstrumentor.instrument_app(app)
 
 @app.get("/")
 def home():
