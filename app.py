@@ -14,7 +14,8 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"status": "LangGraph Agent Running"}
+    APP_VERSION = os.getenv("IMAGE_TAG", "dev")
+    return {"status": f"LangGraph Agent Running ver 1.0.{APP_VERSION}"}
 
 
 @app.post("/ask")
