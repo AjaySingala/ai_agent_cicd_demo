@@ -4,3 +4,5 @@ langchain
 langgraph
 langchain-openai
 python-dotenv
+opentelemetry-sdk 
+opentelemetry-instrumentation-fastapi
