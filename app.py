@@ -8,14 +8,9 @@ from agent import agent
 
 app = FastAPI()
 
-# # For Telemetry.
-# from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
-# FastAPIInstrumentor.instrument_app(app)
-
 @app.get("/")
 def home():
-    APP_VERSION = os.getenv("IMAGE_TAG", "dev")
-    return {"status": f"LangGraph Agent Running ver 1.0.{APP_VERSION}"}
+    return {"status": f"LangGraph Agent Running."}
 
 
 @app.post("/ask")
